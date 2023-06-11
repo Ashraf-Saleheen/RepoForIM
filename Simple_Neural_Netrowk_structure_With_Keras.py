@@ -32,3 +32,4 @@ def build_model():
 
 model = build_model()
 model.fit(x_train, y_train, batch_size=64, epochs=5, validation_data=(x_test, y_test))
+model.evaluate(x_test, y_test)
